@@ -9,11 +9,11 @@ def infer_greedy(files, asr_model):
 
 
 if __name__ == '__main__':
-    model = "QuartzNet15x5_golos.nemo"
+    model = "QuartzNet15x5_golos_nemo.nemo"
     asr_model = nemo_asr.models.EncDecCTCModel.restore_from(model)
     #asr_model.cuda()
 
-    files = ["sound.wav"]
+    files = ["001ce26c07c20eaa0d666b824c6c6924.wav"]
     #with open("sound.wav", 'rb') as f:
      #   data = f.read()
 
