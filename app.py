@@ -11,7 +11,7 @@ def save_file(filename, data):
 
 # Обрабатываем файлы. Читаем модель и передаем список файлов в модель для обработки.
 def process_files(files):
-    model = "QuartzNet15x5_golos.nemo"
+    model = "QuartzNet15x5_golos_nemo.nemo"
     asr_model = nemo_asr.models.EncDecCTCModel.restore_from(model)
     return asr_model.transcribe(files, batch_size=20)
 
